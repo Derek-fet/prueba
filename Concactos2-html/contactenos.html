@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Wilmar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5bfff1a280.js" crossorigin="anonymous"></script>
+  
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="Imagenes/icon.png" alt="Logo" class="w-12 h-12">
+                </a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="http://127.0.0.1:5500/Pagina%20Wilmar/index.html" class="text-gray-700 hover:text-blue-600 transition-colors">
+                        <i class="fa-solid fa-house-chimney mr-2"></i>Inicio
+                    </a>
+                    <a href="http://127.0.0.1:5500/Pagina%20Wilmar%20-%20Servicios/S_index.html" class="text-gray-700 hover:text-blue-600 transition-colors">
+                        <i class="fa-solid fa-comments mr-2"></i>Servicios
+                    </a>
+                    <a href="#" class="text-blue-600 font-medium">
+                        <i class="fa-solid fa-mobile mr-2"></i>Contacto
+                    </a>
+                </div>
+
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/babalubar.babalubar" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors">
+                        <i class="fa-brands fa-facebook text-xl"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=3167614717" target="_blank" class="text-gray-600 hover:text-green-600 transition-colors">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-pink-600 transition-colors">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 pt-24 pb-12">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="bg-white rounded-lg shadow-lg p-8 fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Contáctanos</h2>
+                <div class="mb-4 text-green-700 bg-green-100 rounded-lg px-4 py-2 text-center font-medium">
+                    🕒 Respondemos en menos de 1 hora en horario laboral
+                </div>
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Nombre completo" 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all">
+                    </div>
+                    <div>
+                        <input type="tel" placeholder="Teléfono" 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Correo electrónico" 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Asunto" 
+                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all">
+                    </div>
+                    <div>
+                        <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all">
+                            <option value="">Tipo de consulta</option>
+                            <option value="cotizacion">Cotización</option>
+                            <option value="soporte">Soporte</option>
+                            <option value="informacion">Información</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <textarea placeholder="Tu mensaje" rows="4" 
+                                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="space-y-8 fade-in" style="animation-delay:0.2s;animation-fill-mode:both;">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Información de Contacto</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-location-dot text-blue-600 text-xl"></i>
+                            <p class="text-gray-600">CRA 4 #3-01 MÁRTIRES Neiva - Colombia</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-blue-600 text-xl"></i>
+                            <p class="text-gray-600">3167614717</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-blue-600 text-xl"></i>
+                            <p class="text-gray-600">comizzo33@hotmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horarios de Atención -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Horarios de Atención</h3>
+                    <ul class="text-gray-700 space-y-1">
+                        <li><strong>Lunes a Viernes:</strong> 8:00 am - 6:00 pm</li>
+                        <li><strong>Sábados:</strong> 8:00 am - 2:00 pm</li>
+                        <li><strong>Domingos y festivos:</strong> Cerrado</li>
+                    </ul>
+                </div>
+
+                <!-- Botones de Contacto Directo -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Contacto Directo</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://api.whatsapp.com/send?phone=3167614717" target="_blank" class="contact-btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="tel:3167614717" class="contact-btn btn-phone">
+                            <i class="fa-solid fa-phone"></i> Llamar
+                        </a>
+                        <a href="mailto:comizzo33@hotmail.com" class="contact-btn btn-mail">
+                            <i class="fa-solid fa-envelope"></i> Correo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-600 py-12 border-t border-gold/30">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navegación</h3>
+                    <nav class="space-y-2">
+                        <a href="#" class="block">
+                            <i class="fa-solid fa-house-chimney mr-2"></i>Inicio
+                        </a>
+                        <a href="http://127.0.0.1:5500/Pagina%20Wilmar%20-%20Servicios/S_index.html" class="block">
+                            <i class="fa-solid fa-comments mr-2"></i>Servicios
+                        </a>
+                        <a href="http://127.0.0.1:5500/Concactos2-html/contactenos.html" class="block">
+                            <i class="fa-solid fa-mobile mr-2"></i>Contacto
+                        </a>
+                    </nav>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Redes Sociales</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/babalubar.babalubar" target="_blank" class="hover:text-[#1877f3] transition-colors">
+                            <i class="fa-brands fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=3167614717" target="_blank" class="hover:text-[#25D366] transition-colors">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-[#833AB4] transition-colors">
+                            <i class="fa-brands fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                    <p class="mb-2">CRA 4 #3-01 MÁRTIRES</p>
+                    <p class="mb-2">Neiva - Colombia</p>
+                    <p class="mb-2">Tel: 3167614717</p>
+                </div>
+            </div>
+        </div>
+
+       
+    </footer>
+
+    <div class="container mx-auto px-4">
+        <div class="text-center">
+            <p>&copy; 2024 Babalu Bar. Todos los derechos reservados.</p>
+        </div>
+    </div>
+   
+</body>
+</html>

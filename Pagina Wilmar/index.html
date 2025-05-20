@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilmar Principal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5bfff1a280.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'gold': '#1a1a1a',
+                        'blue-dark': '#1e3a8a',
+                        'blue-hover': '#3454b4',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            'to': {
+                                opacity: '1',
+                                transform: 'none'
+                            }
+                        }
+                    },
+                    animation: {
+                        'fadeInUp': 'fadeInUp 0.5s'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-white text-gray-800">
+    <!-- Header con Navegación -->
+    <header class="bg-white border-b border-gold/30 shadow-sm fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="Imagenes/icon.png" alt="Logo" class="w-12 h-12">
+                </a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="flex items-center text-gray-500 font-medium transition-colors duration-200 hover:text-blue-dark">
+                        <i class="fa-solid fa-house-chimney mr-2 text-gray-500 transition-colors duration-200 group-hover:text-blue-dark"></i>Inicio
+                    </a>
+                    <a href="http://127.0.0.1:5500/Pagina%20Wilmar%20-%20Servicios/S_index.html" class="flex items-center text-gray-500 font-medium transition-colors duration-200 hover:text-blue-dark">
+                        <i class="fa-solid fa-comments mr-2 text-gray-500 transition-colors duration-200 group-hover:text-blue-dark"></i>Servicios
+                    </a>
+                    <a href="http://127.0.0.1:5500/Concactos2-html/contactenos.html" class="flex items-center text-gray-500 font-medium transition-colors duration-200 hover:text-blue-dark">
+                        <i class="fa-solid fa-mobile mr-2 text-gray-500 transition-colors duration-200 group-hover:text-blue-dark"></i>Contacto
+                    </a>
+                </div>
+
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/babalubar.babalubar" target="_blank" class="text-gray-600 hover:text-[#1877f3] transition-colors">
+                        <i class="fa-brands fa-facebook text-xl"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=3167614717" target="_blank" class="text-gray-600 hover:text-[#25D366] transition-colors">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-[#833AB4] transition-colors">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrusel -->
+    <div class="relative overflow-hidden mt-16">
+        <div class="flex transition-transform duration-500 ease-in-out">
+            <div class="flex-none w-full relative">
+                <img src="Imagenes/Ornamentacion.jpg" alt="Diseños y Estructuras" class="w-full h-[600px] object-cover">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
+                    <h1 class="text-5xl font-bold mb-4 text-[#f6f6f6]">Diseños y Estructuras</h1>
+                    <p class="text-xl mb-8">Nuestra especialidad es el diseño y creación de estructuras de una muy buena calidad a tu gusto</p>
+                </div>
+            </div>
+            <div class="flex-none w-full relative">
+                <img src="Imagenes/soldadura.jpg" alt="Estructuras Metálicas" class="w-full h-[600px] object-cover">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
+                    <h1 class="text-5xl font-bold mb-4 text-[#f6f6f6]">Estructuras Metálicas</h1>
+                    <p class="text-xl mb-8">Calidad y durabilidad en cada proyecto</p>
+                </div>
+            </div>
+            <div class="flex-none w-full relative">
+                <img src="Imagenes/Soldadura2.jpg" alt="Publicidad" class="w-full h-[600px] object-cover">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
+                    <h1 class="text-5xl font-bold mb-4 text-[#f6f6f6]">Publicidad</h1>
+                    <p class="text-xl mb-8">Soluciones publicitarias que destacan tu marca</p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- Misión y Visión -->
+    <section class="py-20 bg-white border-t border-b border-gold/30">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="Imagenes/img15.png" alt="Misión" class="rounded-lg shadow-xl">
+                    <div class="absolute -bottom-6 -right-6 bg-gold text-white p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold">Misión</h3>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <h2 class="text-3xl font-bold text-gold">Nuestra Misión</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        La misión de Estructuras y Diseños Wilmar es la elaboración 
+                        de estructuras con alta calidad del material, cumplimiento en 
+                        tiempos establecidos y garantía de sus productos, dándole al 
+                        cliente la mayor satisfacción obteniendo respaldo de los productos, 
+                        convirtiéndolo así en un cliente potencial para la empresa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4 order-2 md:order-1">
+                    <h2 class="text-3xl font-bold text-gold">Nuestra Visión</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        La visión de estructuras y diseños Wilmar ha permitido posicionarse 
+                        como una gran empresa a nivel departamental con cubrimiento total en la región.
+                    </p>
+                </div>
+                <div class="relative order-1 md:order-2">
+                    <img src="Imagenes/img14.png" alt="Visión" class="rounded-lg shadow-xl">
+                    <div class="absolute -bottom-6 -left-6 bg-gold text-white p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold">Visión</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivos -->
+    <section class="py-20 bg-white border-t border-b border-gold/30">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">Objetivos Específicos</h2>
+            <p class="text-xl max-w-3xl mx-auto">
+                Nuestra especialidad es el diseño y creación de estructuras de una muy buena calidad a tu gusto
+            </p>
+        </div>
+    </section>
+
+    
+
+    <!-- Características Principales -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gold">¿Por qué elegirnos?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="transition-transform duration-300 ease-in-out bg-white shadow-md hover:-translate-y-2.5 p-6 rounded-lg border border-gold/30">
+                    <div class="text-gold text-4xl mb-4">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gold">Calidad Premium</h3>
+                    <p class="text-gray-600">Utilizamos materiales de primera calidad y técnicas avanzadas para garantizar la durabilidad.</p>
+                </div>
+                <div class="transition-transform duration-300 ease-in-out bg-white shadow-md hover:-translate-y-2.5 p-6 rounded-lg border border-gold/30">
+                    <div class="text-gold text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gold">Entrega Puntual</h3>
+                    <p class="text-gray-600">Cumplimos con los tiempos establecidos sin comprometer la calidad del trabajo.</p>
+                </div>
+                <div class="transition-transform duration-300 ease-in-out bg-white shadow-md hover:-translate-y-2.5 p-6 rounded-lg border border-gold/30">
+                    <div class="text-gold text-4xl mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gold">Experiencia</h3>
+                    <p class="text-gray-600">Más de 10 años de experiencia en el sector de la metalurgia y diseño.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-white border border-gold shadow-md transition-all duration-300 hover:bg-gray-50 hover:scale-105 p-6 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-2">500+</div>
+                    <p>Proyectos Completados</p>
+                </div>
+                <div class="bg-white border border-gold shadow-md transition-all duration-300 hover:bg-gray-50 hover:scale-105 p-6 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-2">98%</div>
+                    <p>Clientes Satisfechos</p>
+                </div>
+                <div class="bg-white border border-gold shadow-md transition-all duration-300 hover:bg-gray-50 hover:scale-105 p-6 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-2">10+</div>
+                    <p>Años de Experiencia</p>
+                </div>
+                <div class="bg-white border border-gold shadow-md transition-all duration-300 hover:bg-gray-50 hover:scale-105 p-6 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-2">24/7</div>
+                    <p>Soporte Técnico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Llamada a la acción -->
+    <section class="py-20 bg-white cta-section">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">¿Listo para tu próximo proyecto?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Contáctanos hoy mismo y descubre cómo podemos ayudarte a materializar tus ideas
+            </p>
+            <a href="http://127.0.0.1:5500/Concactos2-html/contactenos.html" 
+               class="btn-azul">
+                Contáctanos ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-600 py-12 border-t border-gold/30">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navegación</h3>
+                    <nav class="space-y-2">
+                        <a href="#" class="block">
+                            <i class="fa-solid fa-house-chimney mr-2"></i>Inicio
+                        </a>
+                        <a href="http://127.0.0.1:5500/Pagina%20Wilmar%20-%20Servicios/S_index.html" class="block">
+                            <i class="fa-solid fa-comments mr-2"></i>Servicios
+                        </a>
+                        <a href="http://127.0.0.1:5500/Concactos2-html/contactenos.html" class="block">
+                            <i class="fa-solid fa-mobile mr-2"></i>Contacto
+                        </a>
+                    </nav>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Redes Sociales</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/babalubar.babalubar" target="_blank" class="hover:text-[#1877f3] transition-colors">
+                            <i class="fa-brands fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=3167614717" target="_blank" class="hover:text-[#25D366] transition-colors">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-[#833AB4] transition-colors">
+                            <i class="fa-brands fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                    <p class="mb-2">CRA 4 #3-01 MÁRTIRES</p>
+                    <p class="mb-2">Neiva - Colombia</p>
+                    <p class="mb-2">Tel: 3167614717</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container mx-auto px-4">
+        <div class="text-center">
+            <p>&copy; 2024 Babalu Bar. Todos los derechos reservados.</p>
+        </div>
+    </div>
+   
+
+
+  
+</html>
+

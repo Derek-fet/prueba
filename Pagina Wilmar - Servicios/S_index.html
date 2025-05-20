@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Wilmar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5bfff1a280.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'blue-dark': '#1e3a8a',
+                        'blue-hover': '#3454b4',
+                    },
+                    keyframes: {
+                        slideIn: {
+                            'from': {
+                                transform: 'translateX(100%)',
+                                opacity: '0'
+                            },
+                            'to': {
+                                transform: 'translateX(0)',
+                                opacity: '1'
+                            }
+                        },
+                        fadeInUp: {
+                            'to': {
+                                opacity: '1',
+                                transform: 'none'
+                            }
+                        }
+                    },
+                    animation: {
+                        'slideIn': 'slideIn 0.3s ease-out',
+                        'fadeInUp': 'fadeInUp 0.5s'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="Imagenes/icon.png" alt="Logo" class="w-12 h-12">
+                </a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="http://127.0.0.1:5500/Pagina%20Wilmar/index.html" class="text-gray-700 hover:text-blue-600 transition-colors">
+                        <i class="fa-solid fa-house-chimney mr-2"></i>Inicio
+                    </a>
+                    <a href="#" class="text-blue-600 font-medium">
+                        <i class="fa-solid fa-comments mr-2"></i>Servicios
+                    </a>
+                    <a href="http://127.0.0.1:5500/Concactos2-html/contactenos.html" class="text-gray-700 hover:text-blue-600 transition-colors">
+                        <i class="fa-solid fa-mobile mr-2"></i>Contacto
+                    </a>
+                </div>
+
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/babalubar.babalubar" target="_blank" class="text-gray-600 hover:text-[#1877f3] transition-colors">
+                        <i class="fa-brands fa-facebook text-xl"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=3167614717" target="_blank" class="text-gray-600 hover:text-[#25D366] transition-colors">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-[#833AB4] transition-colors">
+                        <i class="fa-brands fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-4">Diseños y Estructuras</h1>
+                <p class="text-xl opacity-90">Soluciones profesionales en soldadura y fabricación</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Nuestros Servicios</h2>
+            <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                Ofrecemos servicios profesionales de soldadura para construcción, reparación y fabricación en diversos sectores. 
+                Garantizamos soluciones de alta calidad en proyectos industriales, comerciales y residenciales, con técnicas especializadas. 
+                Además, elaboramos piezas publicitarias como señalizaciones para la seguridad y promoción efectiva de nuestros clientes.
+            </p>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service Cards -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col h-full">
+                    <div class="aspect-w-16 aspect-h-9 w-full">
+                        <img src="Imagenes/img1.png" alt="Mesa de metal/madera" class="w-full h-[250px] object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Mesa de metal/madera</h3>
+                        <p class="text-gray-600">Diseños personalizados en metal y madera para su hogar o negocio.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col h-full">
+                    <div class="aspect-w-16 aspect-h-9 w-full">
+                        <img src="Imagenes/img10.png" alt="Parasol metálico" class="w-full h-[250px] object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Parasol metálico</h3>
+                        <p class="text-gray-600">Estructuras metálicas resistentes y elegantes para exteriores.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col h-full">
+                    <div class="aspect-w-16 aspect-h-9 w-full">
+                        <img src="Imagenes/img9.png" alt="Paleta publicitaria" class="w-full h-[250px] object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Paleta publicitaria</h3>
+                        <p class="text-gray-600">Soluciones publicitarias en metal para destacar su marca.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col h-full">
+                    <div class="aspect-w-16 aspect-h-9 w-full">
+                        <img src="Imagenes/img3.png" alt="Banco metálico" class="w-full h-[250px] object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Banco metálico</h3>
+                        <p class="text-gray-600">Mobiliario urbano resistente y duradero.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col h-full">
+                    <div class="aspect-w-16 aspect-h-9 w-full">
+                        <img src="Imagenes/img12.png" alt="Cartel publicitario" class="w-full h-[250px] object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Cartel publicitario</h3>
+                        <p class="text-gray-600">Señalización profesional para su negocio.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 flex flex-col h-full">
+                    <div class="aspect-w-16 aspect-h-9 w-full">
+                        <img src="Imagenes/img13.png" alt="Aviso publicitario" class="w-full h-[250px] object-cover object-center">
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Aviso publicitario</h3>
+                        <p class="text-gray-600">Diseños personalizados para su publicidad exterior.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Proceso de Trabajo -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Nuestro Proceso</h2>
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="mx-auto mb-4 text-[#1a1a1a] text-4xl"><i class="fas fa-comments"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Asesoría</h3>
+                    <p class="text-gray-600">Escuchamos tus ideas y necesidades.</p>
+                </div>
+                <div>
+                    <div class="mx-auto mb-4 text-[#1a1a1a] text-4xl"><i class="fas fa-pencil-ruler"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Diseño</h3>
+                    <p class="text-gray-600">Creamos una propuesta personalizada.</p>
+                </div>
+                <div>
+                    <div class="mx-auto mb-4 text-[#1a1a1a] text-4xl"><i class="fas fa-hammer"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Fabricación</h3>
+                    <p class="text-gray-600">Construimos con materiales de alta calidad.</p>
+                </div>
+                <div>
+                    <div class="mx-auto mb-4 text-[#1a1a1a] text-4xl"><i class="fas fa-check-circle"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Entrega</h3>
+                    <p class="text-gray-600">Instalamos y garantizamos tu satisfacción.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-600 py-12 border-t border-gold/30">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navegación</h3>
+                    <nav class="space-y-2">
+                        <a href="#" class="block">
+                            <i class="fa-solid fa-house-chimney mr-2"></i>Inicio
+                        </a>
+                        <a href="http://127.0.0.1:5500/Pagina%20Wilmar%20-%20Servicios/S_index.html" class="block">
+                            <i class="fa-solid fa-comments mr-2"></i>Servicios
+                        </a>
+                        <a href="http://127.0.0.1:5500/Concactos2-html/contactenos.html" class="block">
+                            <i class="fa-solid fa-mobile mr-2"></i>Contacto
+                        </a>
+                    </nav>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Redes Sociales</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/babalubar.babalubar" target="_blank" class="hover:text-[#1877f3] transition-colors">
+                            <i class="fa-brands fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=3167614717" target="_blank" class="hover:text-[#25D366] transition-colors">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        </a>
+                        <a href="#" class="hover:text-[#833AB4] transition-colors">
+                            <i class="fa-brands fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                    <p class="mb-2">CRA 4 #3-01 MÁRTIRES</p>
+                    <p class="mb-2">Neiva - Colombia</p>
+                    <p class="mb-2">Tel: 3167614717</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container mx-auto px-4">
+        <div class="text-center">
+            <p>&copy; 2024 Babalu Bar. Todos los derechos reservados.</p>
+        </div>
+    </div>
+   
+
+
+    
+</body>
+</html>
